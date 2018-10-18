@@ -1,0 +1,81 @@
+body {
+  font-size: 24px;
+  line-height: 1.5em;
+
+
+}
+
+
+h1 {
+  font-size: 48px;
+  font-family: "Segoe UI",Times, Arial, Tahoma, Verdana, sans-serif;
+}
+
+h1.highlight {font-size: 75px;}
+
+.highlight {font-size: 75px !important;}
+
+#ID1 {color: green;
+border: 3px solid orange
+}
+
+.multiline {
+  background: rgba(125,48,255,0.3);
+  color: #335545;
+  border-bottom: 3px dashed #000
+}
+
+.meinrechteck{
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  background: brown;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.meinrechteck::after{
+  content: 'huhu! \003E';
+  display: block;
+  color: white;
+  padding: 20px;
+}
+
+.meinrechteck2{
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  background: yellow;
+  top: 70px;
+  right: 10px;
+}
+
+
+.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+ul.horizontal {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: block;
+}
+
+ul.horizontal li {
+  display: inline-block;
+  background: rgba(255, 0, 0, 0.5);
+}

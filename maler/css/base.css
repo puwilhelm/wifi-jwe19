@@ -1,3 +1,26 @@
+:root {
+  --screen-max: 1200px;
+  --base-font: 'Montserrat'
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
 
 
 html, body {
@@ -6,6 +29,11 @@ html, body {
 
 html * {
  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
 }
 
 header {
@@ -21,11 +49,12 @@ header img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 header .inner-wrapper {
   position: relative;
-  max-width: 1200px;
+  max-width: var(--screen-max);
   margin: 0 auto;
 
 }
@@ -35,7 +64,7 @@ header h1 {
   left: 0;
   bottom: 0;
   background: green;
-  width: 100%;
+
 }
 
 main {

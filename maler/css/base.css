@@ -8,6 +8,7 @@
   --grey:#696969;
   --font-color-light: var(--grey-light);
   --font-color-dark: var(--grey-dark);
+
 }
 
 
@@ -59,11 +60,12 @@ html * {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
-  background: yellow;
+  background: orange;
   display: flex;
   flex-flow:column;
   min-height: 100vh;
 }
+
 
 header {
   position: relative;
@@ -119,21 +121,17 @@ footer ul {
   padding: 0;
 }
 
-footer .footer-top{
-  display: flex;
-
-}
 
 footer .footer-left {
-  flex:1;
+
 
 }
 
 
 footer .footer-right {
-  flex:1;
 
-  text-align: right;
+
+
 
 
 }
@@ -144,3 +142,19 @@ footer .footer-bottom {
  color: var(--grey-light);
  opacity: .15;
 }
+
+@media (min-width: 576px) {
+   footer .footer-top{
+    display: flex; }
+
+   footer .footer-left,footer .footer-right {
+   flex: 1;
+
+  }
+  footer .footer-right {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) {  }
+@media (min-width: 992px) {  }
+@media (min-width: 1200px){  }

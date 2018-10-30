@@ -1,0 +1,62 @@
+section.content-element {
+  display: block;
+  position: relative;
+}
+
+.content-element .teaser {
+  position: relative;
+
+  background:
+  -webkit-linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/example-content-image.jpg);
+
+  background:
+  linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/example-content-image.jpg);
+
+  background-size: cover;
+  min-height: 35vw;
+}
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+}
+
+
+.content-element img {
+  display: block;
+  width: 50%;
+  margin: 1em 0;
+}
+
+.content-element a.button {
+  display: inline-block;
+  padding: 1em 2em;
+  background: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.content-element a.button:hover {
+  opacity: 0.6;
+}
+
+
+}
+@media screen and (min-width: 576px)  {
+
+  .content-element .teaser p,
+  .contenet-element .content-text p{
+
+    padding-right: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1200px)  {
+  .content-element .teaser {
+    min-height: none;
+    max-height: 40rem;
+  }
+}

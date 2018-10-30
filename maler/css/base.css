@@ -1,108 +1,124 @@
 :root {
   --screen-max: 1200px;
-  --base-font: 'Montserrat';
-  --footer-link-color:#fefefe;
+  --base-font: 'Montserrat', sans-serif;
+  --base-font2: 'Pridi', 'Times New Roman', serif;
 
+  --grey-light: #fefefe;
   --grey-dark: #525252;
-  --grey-light:#fefefe;
-  --grey:#696969;
-  --font-color-light: var(--grey-light);
-  --font-color-dark: var(--grey-dark);
+  --grey: #696969;
 
-}
-
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
-  font-weight: normal;
+  --font-color-light: var(--grey-dark);
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
-  font-weight: bold;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
-  font-weight: lighter;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi/Pridi-Regular.ttf);
-  font-weight: normal;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi/Pridi-Light.ttf.ttf.ttf);
-  font-weight: lighter;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: lighter;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi/Pridi-Bold.ttf.ttf);
-  font-weight: bold;
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Regular.ttf);
+    font-weight: normal;
 }
-
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Light.ttf);
+    font-weight: lighter;
+}
 
 html, body {
   margin: 0;
 }
 
+body {
+  font-family: var(--base-font);
+  font-size: 100%;
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 html * {
- box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-navigation {
+  display: none;
 }
 
 #logo {
   position: fixed;
   z-index: 100;
-  top:0;
+  top: 0;
   left: 5em;
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
 }
-
 #logo a {
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--grey-dark) url('../img/logomuthwill.svg') no-repeat;
-  background-size: contain;
+  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat center center;
+  background-size: 80%;
   text-indent: -9999em;
   overflow: hidden;
-
 }
+
 #logo-part-2 {
   position: absolute;
-  top:0;
-  left: 10em;
-  width: 9em;
-  height: 5em;
+  z-index: 100;
+  top: 0;
+  left: 12em;
+  width: 17em;
+  height: 7em;
 }
 
 #logo-part-2 a {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  line-height: 1em;
+  font-weight: 500;
+  color: var(--grey);
 }
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100%;
-  display: flex;
-  flex-flow:column;
-  min-height: 100vh;
-  background: orange;
+#logo-part-2 a span {
+  display: inline;
 }
 
-
-header {
+header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
@@ -110,7 +126,7 @@ header {
   overflow: hidden;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -118,36 +134,35 @@ header img {
   display: block;
 }
 
-header .inner-wrapper, footer .inner-wrapper {
+header#main-header .inner-wrapper,
+.content-element .inner-wrapper,
+footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
-
 }
 
-header h1 {
+header#main-header h1 {
   position: absolute;
   left: 0;
   bottom: 0;
   background: green;
-
 }
 
 main {
-  flex:1;
-  background: lightgrey;
+  flex: 1;
+  background: white;
 }
 
 footer {
   background: var(--grey-dark);
-  font-family: 'Pridi', sans-serif;
-  font-size: 100%;
 }
+
 footer a {
-  color: var(--footer-link-color);
+  color: var(--grey-light);
+  font-family: var(--base-font2);
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
 footer ul {
@@ -156,34 +171,51 @@ footer ul {
   padding: 0;
 }
 
+footer .footer-top {
+
+}
 
 footer .footer-left {
 }
 
-
 footer .footer-right {
-
 }
 
 footer .footer-bottom {
-
- display: flex;
- color: var(--grey-light);
- opacity: .15;
+  color: var(--grey-light);
+  opacity: .15;
 }
 
-@media (min-width: 576px) {
-   footer .footer-top{
-    display: flex; }
+@media screen and (min-width: 480px) {
 
-   footer .footer-left,footer .footer-right {
-   flex: 1;
+}
 
+
+@media screen and (min-width: 576px) {
+
+  footer .footer-top {
+    display: flex;
   }
+
+  footer .footer-left,
+  footer .footer-right {
+    flex: 1;
+  }
+
   footer .footer-right {
     text-align: right;
   }
+
 }
-@media (min-width: 768px) {  }
-@media (min-width: 992px) {  }
-@media (min-width: 1200px){  }
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

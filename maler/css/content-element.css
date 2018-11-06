@@ -45,6 +45,7 @@ section.content-element {
   overflow: scroll;
 }
 
+
 /* Testen! */
 /* .content-element .teaser::after {
   content:'&nbsp;';
@@ -74,6 +75,11 @@ section.content-element {
   opacity: 0.6;
 }
 
+.content-element .teaser .center{
+  text-align: center;
+
+}
+
 
 
 @media screen and (min-width: 576px)  {
@@ -86,9 +92,19 @@ section.content-element {
   .content-element .teaser .overlay{
     overflow: hidden;
   }
-
+  .content-element .teaser .center{
+    text-align: center;
+    padding-right:0;
+  }
 
 }
+@media screen and (min-width: 1250px)  {
+  header#main-header h1,
+  .content-element >header,
+  .content-element >teaser>header,
+
+
+  }
 
 
 @media screen and (min-width: 1200px)  {

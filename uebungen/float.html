@@ -7,14 +7,23 @@
   }
 .flex-container-left {
   display: flex;
+  float: left;
+
 }
 .flex-container-right {
   display: flex;
   float:right;
+
+
+
+}
+
+.clearfix{
+  clear: both;
 }
 
  p {
-  clear: both;
+
   display: inline-block;
 }
 
@@ -31,10 +40,7 @@
   padding: 20px;
   font-size: 30px;
   border: 1px solid black;
-
 }
-
-
 </style>
 </head>
 <body>
@@ -45,9 +51,13 @@
   <div>#3</div>
   <div>#4</div>
   <div>#5</div>
+
 </div>
-<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+<div class="clearfix">
+
+</div>
+<p class="clearfix">A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+<p class="clearfix">Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
 
 <div class="flex-container-right">
   <div>#1</div>
@@ -55,9 +65,12 @@
   <div>#3</div>
   <div>#4</div>
   <div>#5</div>
+
 </div>
-<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+<div class="clearfix"></div>
+
+<p class="clearfix">A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+<p class="clearfix">Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
 
 
 </body>

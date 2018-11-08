@@ -80,6 +80,7 @@ html * {
   background-size: 80%;
   text-indent: -9999em;
   overflow: hidden;
+
 }
 
 #logo-part-2 {
@@ -131,7 +132,7 @@ header#main-header img {
 
 header#main-header .inner-wrapper,
 .content-element .inner-wrapper
- ,footer .inner-wrapper 
+ ,footer .inner-wrapper
 {
   position: relative;
   max-width: var(--screen-max);

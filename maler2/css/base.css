@@ -17,25 +17,21 @@
     src: url(../fonts/Montserrat-Regular.ttf);
     font-weight: normal;
 }
-
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Medium.ttf);
     font-weight: 500;
 }
-
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: bold;
 }
-
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Light.ttf);
     font-weight: lighter;
 }
-
 @font-face {
     font-family: 'Pridi';
     src: url(../fonts/Pridi-Regular.ttf);
@@ -134,8 +130,9 @@ header#main-header img {
 }
 
 header#main-header .inner-wrapper,
-.content-element .inner-wrapper,
-footer .inner-wrapper {
+.content-element .inner-wrapper
+ ,footer .inner-wrapper 
+{
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;

@@ -1,0 +1,62 @@
+html * {
+  margin: 0;
+  font: 100% sans-serif;
+
+}
+
+body {
+  width: 100%;
+
+}
+
+div {
+  box-sizing: border-box;
+  border: 5px solid red;
+}
+
+p {
+  color: white;
+}
+
+.eins {
+  background-color: blue;
+  float: left;
+  width: 30%;
+  min-width: 300px;
+}
+
+
+.clearfix::before, .clearfix::after {
+  content: '';
+  display: table;
+}
+
+.clearfix::after{
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.zwei {
+  background-color: green;
+  float: right;
+  width: 50%;
+  min-width: 300px;
+}
+
+.test {
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+.zwei {
+        float: left;
+        padding: 10px;
+       }
+  .eins {
+    padding: 10px;
+  }
+}

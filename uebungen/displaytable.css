@@ -1,0 +1,31 @@
+.table {
+  display: table;
+}
+
+.row {
+  display: table-row;
+}
+
+p {
+  display: table-cell;
+  padding: 20px;
+  color: white;
+  border: 3px solid red;
+  min-width: 30px;
+}
+
+#eins {
+  background-color: red;
+}
+
+#zwei {
+  background-color: blue;
+}
+
+#drei {
+  background-color: yellow
+}
+
+#vier {
+  background-color: green;
+}

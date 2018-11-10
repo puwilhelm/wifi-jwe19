@@ -1,0 +1,52 @@
+html {
+  font: 1em;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-around;
+  
+
+}
+
+p {
+  padding: 50px;
+}
+
+.eins {
+  background-color: red;
+  min-height: 100px;
+  order: 2;
+  flex: 2;
+}
+
+.zwei {
+  background-color: green;
+  order: 4;
+  flex: 3;
+}
+
+.drei {
+  background-color: orange;
+  order: 1;
+  flex: 1;
+}
+
+.vier {
+  background-color: yellow;
+  min-height: 100px;
+  order: 5;
+  flex:1;
+
+}
+
+.fünf {
+ background-color: blue;
+ order: 3;
+ flex: 2;
+}

@@ -199,14 +199,14 @@ footer .footer-top {
 .text {
  background-color: var(--grey-dark);
  color: var(--grey-light);
- flex: 2;
- padding: 12px 50px;
+ flex: 1;
+
 }
 
 .eingabe {
   background-color: var(--grey-dark);
   color: var(--grey-light);
- flex: 3;
+ flex: 2;
 }
 
 input[type=submit] {

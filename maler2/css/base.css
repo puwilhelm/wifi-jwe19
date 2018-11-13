@@ -185,13 +185,12 @@ footer .footer-top {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: lightgrey;
+  background-color: var(--grey-dark);
   min-width: 400px;
   max-width: 1200px;
   /* align-items: center; */
   justify-content: space-between;
   align-content: space-around;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -200,7 +199,6 @@ footer .footer-top {
  background-color: var(--grey-dark);
  color: var(--grey-light);
  flex: 1;
-
 }
 
 .eingabe {

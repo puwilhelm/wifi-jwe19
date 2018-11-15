@@ -35,8 +35,8 @@ img.slider-image {
 }
 
 .button-holder {
-  position: relative;
-  top: -30px;
+  position: absolute;
+  top: 30px;
 }
 
 .slider-change {

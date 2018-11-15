@@ -1,0 +1,44 @@
+.item1 {
+  grid-area: left;
+  background-color: green;
+
+}
+
+.item2 {
+  grid-area: middle;
+  background-color: blue;
+}
+.item3 {
+  grid-area: right;
+  background-color: yellow;
+
+}
+
+.item1, .item2  {
+  padding: 20px;
+}
+
+.item3 {
+  padding-left: auto;
+  padding-right: auto;
+
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  
+  grid-gap: 10px;
+  /* background-color: orange; */
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1em;;
+}
+
+ul>li {
+  list-style: none;
+}

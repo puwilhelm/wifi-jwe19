@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formular</title>
+</head>
+
+<body>
+  <form class="" action="form.html" method="post">
+    <p>
+
+      <label for="female"></label>
+      Frau
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="male"></label>
+      Mann
+    <input type="radio" name="gender" id="male" value="male">
+    </p>
+    <p>
+    <label for="firstname">Vorname</label>
+    <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname" tabindex="1">
+    </p><p>
+    <label for="lastname">Nachname</label>
+    <input type="text" name="firstname" id="lastname" value="" placeholder="Nachname" tabindex="2">
+    </p>
+
+    <p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value="" placeholder="email" tabindex="3">
+    </p>
+    <p>
+      <label for="passwordId">Passwort</label>
+      <input type="password" name="passwordId" id="passwordId" value="" tabindex="4">
+
+    </p>
+
+    <p><label for="socks">Wie viele paar Socken kannst du gleichzeitig tragen?</label>
+      <input type="number" name="saocks" id="socks" value="" min="4" max="30" step="2">
+    </p>
+
+    <p>
+      <label for="animlafriend">Welcher Typ Mensch bist du</label>
+      <select id="animlafriend" name="animlafriend" multiple>
+        <option value="id1">Hundemensch</option>
+        <option value="id2">Katzenmensch</option>
+        <option value="id3">Vogelmensch</option>
+        <option value="id4">keinMensch</option>
+      </select>
+    </p>
+    <p>
+<label for="notes"></label>
+      <textarea name="notes" id="notes" rows="8" cols="80">
+    gwergg
+    gwefge
+
+    fdgwdgdg
+    ge
+    </textarea></p>
+
+    <p>
+    <label for="agb">AGB</label>
+    <input type="checkbox" name="agb" id="agb" value="ok" required>
+    </p>
+    <label for="submit">Absenden</label>
+    <input type="submit" name="submit" id="submit" value="jetzt absenden">
+    <button>Senden?</button>
+    <input type="reset" name="reset" value="Alles zurücksetzten">
+  </form>
+</body>
+
+</html>

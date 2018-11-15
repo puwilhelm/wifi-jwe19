@@ -1,0 +1,72 @@
+@keyframes moving {
+  0% {
+   left: 0;
+  }
+  20% {
+    left: 300px;
+    top:0;
+  }
+  40%{
+    top: 300px;
+    left:300px;
+  }
+  80%{
+    top: 300px;
+    left: 0px;
+  }
+  100% {
+  left: 0;
+  }
+}
+
+.crazy {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 300px;
+  height: 300px;
+  background-color: lightgreen;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+}
+
+  .kreisblack{
+
+    height: 300px;
+    width: 300px;
+    /* background-color: green; */
+    border: 10px solid black;
+    border-radius: 100%;
+    /* border-radius: 100%; */
+  }
+
+  .kreiswhite{
+    position: absolute;
+    top:8px;
+    /* left: 0px; */
+    height: 300px;
+    width: 300px;
+    /* background-color: green; */
+    border: 10px solid white;
+    border-radius: 100%;
+    /* border-radius: 100%; */
+  }
+
+  .loader {
+    border: 16px solid #3498db;
+    border-radius: 50%;
+    border-top: 16px solid #f3f3f3;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+  }
+
+
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }

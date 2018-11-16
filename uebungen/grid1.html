@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+
+        'left main main'        
+        'left right right';
+
+        grid-gap: 10px;
+        background-color: orange;
+        padding: 10px;
+
+      }
+
+      .left {
+        grid-area: left;
+        background-color: green;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: yellow;
+
+      }
+      .right {
+        grid-area: right;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+
+      }
+
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        1lölölöööööööö
+        öööööööööööööö
+        öööööööööööö
+      </div>
+      <div class="main">
+        2
+      </div>
+      <div class="right">
+        3
+      </div>
+    </div>
+  </body>
+</html>

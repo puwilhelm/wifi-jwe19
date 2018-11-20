@@ -14,8 +14,8 @@ html,body {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  max-width: 800px;
-  min-height: 400px;
+  max-width: 600px;
+  min-height: 200px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr;
   grid-gap: 10px;

@@ -4,6 +4,8 @@
   margin-right: auto;
 }
 
+
+
 .container {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 1fr) 1fr;
@@ -11,6 +13,10 @@
   grid-gap:10px;
   align-content: center;
   text-align: center;
+}
+
+.container h2, .container p, .container a {
+  font-family: "OpenSans";
 }
 
 .container .titel {

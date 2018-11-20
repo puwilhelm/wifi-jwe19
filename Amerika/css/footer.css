@@ -6,6 +6,10 @@ margin-right: auto;
 background-color: grey;
 }
 
+footer p, footer a {
+  font-family: "OpenSans";
+}
+
 footer .left {
   float: left;
   list-style: none;

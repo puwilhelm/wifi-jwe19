@@ -5,6 +5,7 @@
   align-content: center;
   text-align: center;
   border: 1px solid red;
+  object-fit: cover;
 }
 
 .containerFotowall div {

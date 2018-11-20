@@ -1,0 +1,78 @@
+.wrapper {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 1fr) 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap:10px;
+  align-content: center;
+  text-align: center;
+}
+
+.container .titel {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid red;
+}
+
+.container .lakepowellimg {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.container .hollywoodimg {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.container .sandiegoimg {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.container .lakepowelltext {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.container .hollywoodtext {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.container .sandiegotext {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.container .a {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.container .c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}

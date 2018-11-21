@@ -15,6 +15,7 @@ footer * {
 
 .footercontainer{
   padding-top: 30px;
+  padding-bottom: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -28,4 +29,25 @@ footer * {
 
 .footertext {
   padding-bottom: 20px;
+}
+
+.footercontainerdark{
+  background-color: #4f4f4f;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.medialinks {
+  text-align: right;
+}
+.medialinks a {
+  text-decoration: none;
+}
+
+.colorend {
+  height: 3em;
+  background-color: grey;
 }

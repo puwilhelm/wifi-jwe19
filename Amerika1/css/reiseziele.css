@@ -8,7 +8,8 @@
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 .reiseziele-container div img {

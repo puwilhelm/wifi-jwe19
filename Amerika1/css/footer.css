@@ -1,5 +1,6 @@
 footer {
   background-color: grey;
+  width: 100%;
 
 }
 
@@ -31,13 +32,23 @@ footer * {
   padding-bottom: 20px;
 }
 
-.footercontainerdark{
+.footerfull{
   background-color: #4f4f4f;
-  padding-top: 5px;
-  padding-bottom: 40px;
+}
+
+.footercontainerdark{
+
+  padding-top: 10px;
+  padding-bottom: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+}
+
+.bannerdark{
+  background-color: #4f4f4f;
+  padding-left: 50%;
+  padding-right: 50%;
 }
 
 .medialinks {

@@ -23,6 +23,12 @@
 }
 
 @font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
   font-family: 'OpenSans';
   src: url(../fonts/OpenSans-Regualr.ttf);
   font-weight: normal;

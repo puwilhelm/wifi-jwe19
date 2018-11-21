@@ -17,6 +17,18 @@
   display: block;
 }
 
+.bannertext {
+  position: absolute;
+  top:-35px;
+  left:330px;
+  z-index: 1;
+}
+.textwrapper>p{
+  position: absolute;
+  top: -220px;
+  color: white;
+}
+
 
 .banneraddon {
 position: relative;

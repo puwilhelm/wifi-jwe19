@@ -1,0 +1,55 @@
+html * {
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+}
+
+.inner-wrapper2{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.wrapper {
+ max-width: 1000px;
+ margin: 0 auto;
+ position: absolute;
+}
+
+.text {
+  border: 1px solid red;
+  color: white;
+  font-size: 1.5em;
+  z-index: 1;
+  margin-left: 30%;
+  margin-top: -60%;
+
+}
+
+.overlay {
+  padding-right: 5%;
+  float: right;
+  position:relative;
+  top:-40px;
+}
+
+.bilder .flag {
+  position: absolute;
+  top: -20px;
+  left: 398px;
+}
+
+.slogan {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  z-index: 2;
+  font-size: 1.5em;
+}

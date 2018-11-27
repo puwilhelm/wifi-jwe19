@@ -11,7 +11,7 @@ html {
   background-size: cover;
 }
 .overlay h1 {
-  background-color: #1f1;
+  background-color: #fff;
   color: #fff;
   mix-blend-mode: multiply;
   position: absolute;
@@ -23,6 +23,11 @@ html {
   font-family: arial;
   font-size: 3em;
   margin: 0;
+  transition: box-shadow 1s ease;
   /* opacity: 0.9; */
   /* box-shadow: 0 0 16px #000, 0 0 32px #000; */
+}
+
+.overlay h1:hover {
+  box-shadow: 0 0 16px #000, 0 0 32px #000;
 }

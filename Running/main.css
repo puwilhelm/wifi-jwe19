@@ -1,0 +1,137 @@
+html, body, h1,p {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+h1,h2,h3, a {
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  color: black;
+  font-style: normal;
+  
+}
+
+.inner-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.slogan{
+  background-color: #5cd074;
+
+}
+
+.slogan h1 {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.header {
+  position: relative;
+}
+
+.headertext {
+  position: absolute;
+  background-color: white;
+  opacity: 0.3;
+  bottom: 20px;
+  width: 100%;
+}
+
+.headertext p {
+  color: #5cd074;
+  font-size: 1em;
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footerbackground{
+  background-color:#5cd074;
+}
+
+.footer p{
+  padding: 8px;
+  text-align: right;
+}
+
+.nav ul li {
+  list-style: none;
+
+}
+
+.nav ul {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.nav ul li a{
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #5cd074;
+}
+
+.nav h2 {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.nav ul {
+  /* padding: 0; */
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.nav h2 {
+  padding-left: 15px;
+}
+
+.main ul li {
+  list-style: none;
+}
+
+.main {
+  /* float: right; */
+  background-color: #c1f1c9;
+  padding: 15px 15px 15px 15px;
+}
+
+
+@media screen and (min-width: 500px) {
+  .nav {
+    float: left;
+    width: 200px;
+
+  }
+  .nav ul {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .main {
+    padding: 15px 15px 0px 220px;
+  }
+
+
+}

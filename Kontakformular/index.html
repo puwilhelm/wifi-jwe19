@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="kontaktformular.css">
+    <title>Kontaktformular</title>
+  </head>
+  <body>
+
+<!-- Kontaktformular mit Wrapper auf 1200px -->
+    <div class="wrapper">
+      <div class="kontaktformular">
+        <form class="" action="index.html" method="post">
+
+          <div class="input">
+            <label for="first_last_name">Name:*</label>
+            <input type="text" id="first_last_name" name="first_last_name" placeholder="Max Mustermann" required/>
+          </div>
+
+          <div class="input">
+            <label for="company">Firma:</label>
+            <input type="text" name="company" id="company" placeholder="Beispiel GmbH" />
+          </div>
+
+          <div class="input">
+            <label for="email">E-Mail:*</label>
+            <input type="email" name="email" id="email" placeholder="email@test.at" required/>
+          </div>
+
+          <div class="input">
+            <label for="subject">Betreff:</label>
+            <input type="text" name="subject" id="subject" placeholder="Ihr Anliegen"/>
+          </div>
+
+          <div class="input">
+            <label for="message">Ihr Anliegen:* </label>
+            <textarea name="message" id="message" placeholder="Ihre Nachricht" required></textarea>
+          </div>
+
+          <div class="submit">
+            <input type="submit" name="submit" id="submit" value="Absenden">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  <!-- Ende Kontaktformular -->
+
+  </body>
+</html>

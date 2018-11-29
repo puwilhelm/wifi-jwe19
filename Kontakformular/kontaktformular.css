@@ -6,8 +6,8 @@
 
 .wrapper>.kontaktformular {
   border: 1px solid red;
-  background-color: yellow;  
-  box-shadow: 5px 10px 8px 10px #888888;
+  background-color: yellow;
+
 }
 
 form {
@@ -17,4 +17,45 @@ form {
 .wrapper>.kontaktformular label {
   display: block;
 
+}
+
+@media screen and (min-width: 503px) {
+ .wrapper>.kontaktformular {
+   box-shadow: 5px 10px 8px 10px #888888;
+ }
+}
+
+input[type=text]:hover, input[type=email]:hover, textarea[id=message]:hover {
+  background-color: lightgrey;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+input[type=text], input[type=email],  textarea[id=message] {
+  transition: background-color 1s ease, box-shadow 1s ease;
+  font-size: 1em;
+  font-family: 'Arial';
+  
+}
+
+input[type=submit] {
+  font-size: 2em;
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+
+  transition: background-color 1s ease, border-radius 1s ease;
+}
+
+
+input[type=submit]:hover {
+  background-color: red;
+  border-radius: 0 0 0 30%;
+}
+
+
+label {
+  font-size: 1em;
+  font-family: 'Arial';
+  padding-bottom: 0.1em;
+  padding-top: 0.6em;
 }

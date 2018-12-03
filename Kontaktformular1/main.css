@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper > p {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 2em;
+}
+
+label {
+  /* display: block; */
+}
+
+
+
+
+.kontaktformular {
+  flex: 2;
+}
+
+.anschrift {
+  flex: 1;
+}
+
+.inputvertical {
+  display: inline-block;
+    margin: 0 10px 1em 5px;
+}
+
+input[type=text], input[type=email],  textarea[id=message] {
+
+  font-size: 1em;
+  font-family: 'Arial';
+  width: 100%;
+}
+
+textarea[id=message] {
+ height: 5em;
+}
+
+.input {
+  margin: 0 10% 1em 5px;
+
+}
+
+@media screen and (min-width: 550px) {
+  .container {
+    display: flex;
+    border: 1px solid red;
+  }
+}

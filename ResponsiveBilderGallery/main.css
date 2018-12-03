@@ -9,15 +9,12 @@
 }
 
 img {
-
   width: 100%;
-
-
 }
 
 .column {
-    flex: 25%;
-    max-width: 25%;
+    flex: 100%;
+    max-width: 100%;
     padding: 0 4px;
 }
 
@@ -30,27 +27,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-
-
-
-}
-
-img:hover {
-
 }
 
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (min-width: 500px) {
     .column {
-
         flex: 50%;
         max-width: 50%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 800px) {
     .column {
-        flex: 100%;
-        max-width: 100%;
+        flex: 25%;
+        max-width: 25%;
     }
 }

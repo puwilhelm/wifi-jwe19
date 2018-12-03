@@ -1,0 +1,165 @@
+.wrapper{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  font-family: 'Arial';
+}
+
+.element {
+  background-color: red;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.container img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
+.container {
+  background-color: lightgrey;
+
+}
+
+.logo{
+  margin-right: auto;
+}
+
+.banner {
+  position: relative;
+}
+
+.backgroundbanner img {
+  display: block;
+  width: 100%;
+  height: 100%
+  object-fit: cover;
+}
+
+.siegel{
+  position: absolute;
+  bottom:-70px;
+  right: 10%;
+}
+
+.siegel img{
+  max-width: 150px;
+  display: block;
+  object-fit: cover;
+
+}
+
+.overlay {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  transition: opacity 2s ease;
+}
+
+.overlay:hover {
+  opacity: 0;
+}
+
+
+.text {
+  position: absolute;
+  top: 10%;
+  left: 100px;
+}
+
+.teaser {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+}
+
+.teaser img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+article {
+  border: 3px solid black;
+}
+
+
+.teaser {
+  text-align: center;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.left, .right {
+  flex:1;
+}
+.right {
+  text-align: left;
+}
+
+footer li {
+  list-style: none;
+
+}
+
+.footerzeile {
+  background-color: grey;
+
+}
+
+.footerzeile p {
+  margin: 0;
+  padding: 5px;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  margin: 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 650px){
+  .container {
+    display: flex;
+    align-items: center;
+  }
+ .teaser {
+   flex-direction: row;
+ }
+
+ footer {
+   flex-direction: row;
+ }
+ .right {
+   text-align: right;
+ }
+
+ form {
+   display: flex;
+ }
+
+}

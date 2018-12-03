@@ -25,7 +25,10 @@ a {
 
 .container {
   background-color: lightgrey;
+}
 
+.container >.eins >a {
+ padding: 0;
 }
 
 .logo{

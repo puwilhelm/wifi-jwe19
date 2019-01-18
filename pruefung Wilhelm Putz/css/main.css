@@ -1,0 +1,305 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'sans';
+    font-weight: 400;
+}
+
+
+h2 {
+  font-family: 'grace';
+  font-size: 2em;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.container .logo img {
+  display: block;
+  max-width: 320px;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .logo, .container .navi {
+  margin-top: 10px;
+}
+
+.container .navi a {
+  text-decoration: none;
+
+}
+.headerbild {
+  margin-top: 20px;
+}
+
+
+.headerbild img{
+  display: block;
+  width: 100%;
+  height: 100%
+  object-fit: cover;
+}
+
+.about {
+  /* background-color: #CDE8EA; */
+}
+
+.about .text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aboutcontainer .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutcontainer .left {
+  margin: 0 20px;
+}
+
+.aboutcontainer .right{
+  text-align: center;
+  margin: 0 20px;
+}
+
+.aboutcontainer .button {
+  text-align: center;
+
+}
+.aboutcontainer .button a {
+  text-decoration: none;
+  background-color: #CDE8EA;
+  padding: 10px 20px;
+  border: 1px solid #CDE8EA;
+  border-radius: 20px;
+
+}
+
+.aboutcontainer .button {
+  margin: 20px 0;
+}
+
+.hintergrundbild img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hintergrundbild {
+  position: relative;
+}
+
+.textimbild {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.zwei .textimbild p {
+  font-family: 'grace';
+  text-align: center;
+
+}
+
+.drei {
+  margin: 20px 0;
+}
+
+.drei .galerie {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+.vier .container .bildoverlay{
+  margin: 10px;
+}
+.vier .container .bildoverlay {
+  position: relative;
+}
+
+.vier .container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.vier .container .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: green;
+  opacity: 0.5;
+}
+
+.vier .container .overlay p{
+ margin-top: 40%;
+
+}
+
+
+.fuenf .anschrift {
+  text-align: center;
+  color: lightgrey;
+}
+
+.fuenf {
+  background-color: #3C3C3C;
+  padding: 20px 0;
+
+}
+
+.fuenf .contact{
+
+  margin: 20px;
+}
+
+.fuenf .inputvertical {
+  display: inline-block;
+    margin: 0 10px 1em 5px;
+}
+
+.input {
+  padding: 10px 0;
+}
+
+input[type=text], input[type=email],input[type=date],  textarea[id=message] {
+
+  font-size: 1em;
+  font-family: 'Arial';
+  width: 100%;
+
+}
+
+textarea[id=message] {
+ height: 5em;
+}
+
+footer {
+  background-color: #CDE8EA;
+  padding: 20px 0;
+}
+
+footer .wrapper .left {
+  text-align: center;
+
+}
+
+footer .left .link {
+  margin: 10px 0;
+}
+
+footer .wrapper .left a{
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .right {
+  display: none;
+
+}
+
+.sechs {
+  background-color: #3C3C3C;
+  text-align: center;
+  padding: 20px;
+  color: lightgrey;
+}
+
+
+@media screen and (min-width: 550px) {
+ .container {
+
+   display: flex;
+   align-items: center;
+ }
+ .logo {
+   margin-right: auto;
+ }
+ .container .navi a{
+   margin: 0 10px;
+ }
+.overlay {
+  display: none;
+}
+ .vier .container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+ }
+footer .right {
+  display: inherit;
+}
+
+
+.footerflex {
+  display: flex;
+}
+
+.footerflex .left {
+  flex: 1;
+  order: 1;
+  }
+
+.footerflex .right {
+  flex: 1;
+}
+
+.contactflex {
+  display: flex;
+}
+
+.contactflex .anschrift {
+  flex:1;
+}
+
+.contactflex .contact {
+  flex:2;
+}
+.about {
+  background-color: #CDE8EA;
+  padding: 20px;
+}
+
+.aboutcontainer {
+  display: flex;
+  background-color: white;
+}
+
+.aboutcontainer .right {
+  flex: 2;
+  order: -1;
+
+}
+
+.aboutcontainer .left {
+  flex: 1;
+  padding: 20px;
+}
+
+.aboutcontainer .button {
+  display: none;
+}
+
+
+}

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: 'grace';
+  src: url(../fonts/grace.ttf);
   font-weight: normal;
 }
 
@@ -29,25 +29,19 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regualr.ttf);
-  font-weight: normal;
+  font-family: 'sans';
+  src: url(../fonts/sans.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Light.ttf);
-  font-weight: lighter;
+  font-family: 'sans';
+  src: url(../fonts/sans400.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-ExtraBold.ttf);
-  font-weight: bolder;
+  font-family: 'sans';
+  src: url(../fonts/sans700.ttf);
+  font-weight: 700;
 }

@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  transition: all 1s ease-out;
+  background: blue;
+  color: orange;
+}
+
+button.run {
+  transform: translateY(200px);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      alert('Hallo Welt');
+      console.log('Das ist mein erster Log');
+      var text = 'Hallo Welt in der Console';
+      var x = 1;
+      var y = 2;
+
+      for(x=0; x<10;x++){
+        console.log(summe(3,x));
+        if(x == 2){
+          console.log('x ist 2');
+        }
+        else console.log('x ist nicht gleich 2');
+      }
+
+      function summe (x, y){
+        return x + y;
+      }
+
+      function ergebnis (x,y,z){
+        var sum = x+y;
+        return z + sum;
+      }
+
+      console.log(ergebnis(3,5,'Summe neu: '));
+
+      console.log(summe(3,2));
+    </script>
+  </body>
+</html>

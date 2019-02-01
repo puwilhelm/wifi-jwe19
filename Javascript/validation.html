@@ -38,8 +38,11 @@
 E-mail:
   <input type="email" name="email" class="kb-password">
   <br />
-  <p>Date: <input type="text" id="datepicker"></p>
+  <!-- <p>Date: <input type="text" id="datepicker"></p> -->
  <br>
+  <input id="fileupload" type="file" name="files[]" data-url="server/php" multiple>
+ <br>
+
 
 
   <button class="sichtbar" id="knopf">Klick mich</button>
@@ -56,36 +59,63 @@ E-mail:
   <div class="criteria" id="email1">Email geprüft</div>
   <div class="criteria" id="geschlecht1">Geschlecht ausgewählt</div>
   <div class="criteria" id="checkbox3">Mindestens eine Checkbox ausgewählt</div>
+  <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/vendor/jquery.ui.widget.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+  <script src="js/jquery.fileupload.js"></script>
+  <script>
+  $(function () {
+      $('#fileupload').fileupload({
+          dataType: 'json',
+          done: function (e, data) {
+              $.each(data.result.files, function (index, file) {
+                  $('<p/>').text(file.name).appendTo(document.body);
+              });
+          }
+      });
+  });
+  </script>
 
 
 
-</body>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
 
   <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
 
 <script>
-  $( function() {
-  //   $( "#datepicker" ).datepicker({
-  // monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ]});
-  $( "#datepicker" ).datepicker({
-    showAnim: "fold",
-    monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ],
-    showMonthAfterYear: true,
-    yearRange: "2018:2020",
-    dateFormat: "dd-mm-yy"
-
-});
 
 
 
-  } );
+
+//   $( function() {
+//   //   $( "#datepicker" ).datepicker({
+//   // monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ]});
+//   $( "#datepicker" ).datepicker({
+//     showAnim: "fold",
+//     monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ],
+//     showMonthAfterYear: true,
+//     yearRange: "2018:2020",
+//     dateFormat: "dd-mm-yy"
+//
+// });
+
+
+
+  // } );
 
 	$('.kb-password').keyup(function() {
 		var input = $(this).val();

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="de">
+  <link rel="stylesheet" href="jquery-ui.css">
+
+	<title>kb_jQuery Input Formularvalidierung</title>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
+	<style>
+		.valide {
+			color: lightgreen;
+		}
+    .sichtbar {
+      display : none;
+    }
+	</style>
+</head>
+<body>
+  <input id="male" type="radio" name="gender" value="male" class="kb-password"> Male<br>
+   <input id="female" type="radio" name="gender" value="female" class="kb-password"> Female<br>
+   <input id="other" type="radio" name="gender" value="other" class="kb-password"> Other<br><br>
+
+  First name:<br>
+  <input id="vorname" type="text" name="firstname" class="kb-password">
+  <br>
+  Last name:<br>
+  <input id="nachname" type="text" name="lastname" class="kb-password">
+  <br><br>
+  Passwort:<br />
+  <input  type="text" class="kb-password"><br><br>
+  Passwort wiederholen<br>
+  <input  id="second" type="text" class="kb-password"><br><br>
+  <input type="checkbox" name="vehicle1" value="Bike" class="kb-password" id="checkbox1">Newsletter
+<br>
+<input type="checkbox" name="vehicle2" value="Car" class="kb-password" id="checkbox2">Cookies akzeptieren
+<br><br>
+E-mail:
+  <input type="email" name="email" class="kb-password">
+  <br />
+  <!-- <p>Date: <input type="text" id="datepicker"></p> -->
+ <br>
+  <input id="fileupload" type="file" name="files[]" data-url="server/php" multiple>
+ <br>
+
+
+
+  <button class="sichtbar" id="knopf">Klick mich</button>
+  <br><br>
+
+	<div class="criteria" id="length">Mindestens 8 Zeichen lang</div>
+	<div class="criteria" id="letter">Enthält einen Buchstaben</div>
+	<div class="criteria" id="capital">Enhält einen Großbuchstaben</div>
+	<div class="criteria" id="number">Enthält eine Zahl</div>
+	<div class="criteria" id="special">Enthält ein Sonderzeichen</div>
+  <div class="criteria" id="beide">Beide Passwörter stimmen überein</div>
+  <div class="criteria" id="vorname1">Enthält Vorname</div>
+  <div class="criteria" id="nachname1">Enthält Nachname</div>
+  <div class="criteria" id="email1">Email geprüft</div>
+  <div class="criteria" id="geschlecht1">Geschlecht ausgewählt</div>
+  <div class="criteria" id="checkbox3">Mindestens eine Checkbox ausgewählt</div>
+  <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/vendor/jquery.ui.widget.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+  <script src="js/jquery.fileupload.js"></script>
+  <script>
+  $(function () {
+      $('#fileupload').fileupload({
+          dataType: 'json',
+          done: function (e, data) {
+              $.each(data.result.files, function (index, file) {
+                  $('<p/>').text(file.name).appendTo(document.body);
+              });
+          }
+      });
+  });
+  </script>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+
+<script>
+
+
+
+
+//   $( function() {
+//   //   $( "#datepicker" ).datepicker({
+//   // monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ]});
+//   $( "#datepicker" ).datepicker({
+//     showAnim: "fold",
+//     monthNames: [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ],
+//     showMonthAfterYear: true,
+//     yearRange: "2018:2020",
+//     dateFormat: "dd-mm-yy"
+//
+// });
+
+
+
+  // } );
+
+	$('.kb-password').keyup(function() {
+		var input = $(this).val();
+    var second = $("#second").val();
+
+    var vorname = $("#vorname").val();
+    var nachname = $("#nachname").val();
+    var checkbox1 = $("#checkbox1").prop("checked");
+    var checkbox2 = $("#checkbox2").prop("checked");
+    var male = $("#male").is(":checked");
+    var female = $("#female").is(":checked");
+    var other = $("#other").is(":checked");
+
+
+		if( input.length >= 8 ){
+			$('#length').addClass('valide');
+		} else {
+			$('#length').removeClass('valide');
+		}
+    if( vorname.length > 0 ){
+			$('#vorname1').addClass('valide');
+		} else {
+			$('#vorname1').removeClass('valide');
+		}
+    if( nachname.length > 0 ){
+			$('#nachname1').addClass('valide');
+		} else {
+			$('#nachname1').removeClass('valide');
+		}
+    if( checkbox1 == true || checkbox2 == true ){
+			$('#checkbox3').addClass('valide');
+		} else {
+			$('#checkbox3').removeClass('valide');
+		}
+
+    if( male == true || female == true || other == true){
+			$('#geschlecht1').addClass('valide');
+		} else {
+			$('#geschlecht1').removeClass('valide');
+		}
+
+		if( input.match(/[A-z]/) ){
+			$('#letter').addClass('valide');
+		} else {
+			$('#letter').removeClass('valide');
+		}
+		if( input.match(/[A-Z]/) ){
+			$('#capital').addClass('valide');
+		} else {
+			$('#capital').removeClass('valide');
+		}
+		if( input.match(/\d/) ){
+			$('#number').addClass('valide');
+		} else {
+			$('#number').removeClass('valide');
+		}
+		if( input.match(/[!@#$%\^&*(){}[\]<>?/|\-+]/) ){
+			$('#special').addClass('valide');
+		} else {
+			$('#special').removeClass('valide');
+		}
+
+    if(input == second){
+      $('#beide').addClass('valide');
+		} else {
+			$('#beide').removeClass('valide');
+    }
+    var sumValide = $(".valide").length;
+    if(sumValide > 5){
+      $("#knopf").removeClass("sichtbar");
+    }
+    else {
+      $("#knopf").addClass("sichtbar");
+    }
+
+	});
+
+</script>
+</html>

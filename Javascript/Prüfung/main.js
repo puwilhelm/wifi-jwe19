@@ -86,3 +86,9 @@ $('#datepicker').on("change",function(){
   var x = $('#datepicker').val();
   console.log(x);
 });
+
+
+
+    if ( elem.checked )
+    if ( $( elem ).prop( "checked" ) )
+    if ( $( elem ).is( ":checked" ) )

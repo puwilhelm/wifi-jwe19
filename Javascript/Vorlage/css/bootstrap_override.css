@@ -1,0 +1,49 @@
+.valide {
+  color : red;
+}
+
+#anredefehlt
+{
+  display: none;
+
+}
+
+#vornameZukurz{
+  display: none;
+
+}
+
+#nachnameZukurz{
+  display: none;
+
+}
+
+#emailLeer{
+  display: none;
+
+}
+
+#passwortFalse{
+  display : none;
+
+}
+
+#passwortFalseConfirm{
+  display:none;
+
+}
+
+#datumLeer{
+  display:none;
+
+}
+
+#datenschutzLeer{
+  display:none;
+
+}
+
+#passwortNotSame{
+  display : none;
+
+}
